@@ -21,21 +21,21 @@ https://app.roboflow.com/
 
 ## Step 2 : train the model on Google Colab
 
-1.upload our dataset on google drive
+1. upload our dataset on google drive
 
-2.mount the Google Drive to Google Colab
+2. mount the Google Drive to Google Colab
 
 ```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-3.clone the darknet git repository
+3. clone the darknet git repository
 ```
 ! git clone https://github.com/AlexeyAB/darknet
 ```
 
-4.Open darknet/Makefile and put 1 in front of GPU, CUDNN, and OPENCV instead of 0. These changes are required if you wanted to use GPU on Google Colab.
+4. Open darknet/Makefile and put 1 in front of GPU, CUDNN, and OPENCV instead of 0. These changes are required if you wanted to use GPU on Google Colab.
 ```
 %cd /content/darknet
 !sed -i 's/OPENCV=0/OPENCV=1/' Makefile
@@ -43,14 +43,14 @@ drive.mount('/content/drive')
 !sed -i 's/CUDNN=0/CUDNN=1/' Makefile
 ```
 
-5.Install the base darknet framework with the below commands.
+5. Install the base darknet framework with the below commands.
 ```
 %cd darknet 
 ! make
 ```
 
 
-6.make a copy of yolov3.cfg
+6. Make a copy of yolov3.cfg
 ```
 !cp cfg/yolov3.cfg cfg/yolov3_training.cfg
 ```
@@ -70,11 +70,23 @@ drive.mount('/content/drive')
 ```
 
 
-8.Create .names and .data file
+8. Create .names and .data file
 
 
-9.Upload dataset in Colab
+9. Upload dataset in Colab
 
 
-10.Download pre-trained weights for the convolutional layers file
+10. Download pre-trained weights for the convolutional layers file
 
+```
+!wget https://pjreddie.com/media/files/darknet53.conv.74
+```
+
+
+11. start training
+```
+!./darknet detector train data/obj.data cfg/yolov3_training.cfg darknet53.conv.74 -dont_show
+```
+
+
+##Step 3: prediction
