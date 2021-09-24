@@ -98,5 +98,5 @@ If you are interested contact me by email
 Download my LP-detection repository and .weights file
 Test on a single image:
 ```
-Python  yolo.py –image test.jpg
+Python  yolo.py --image test.jpg
 ```
