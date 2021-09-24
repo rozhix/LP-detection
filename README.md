@@ -9,3 +9,6 @@ Opencv-python == 4.5.3.56
 ## Step 1: Prepare the dataset
 I downloaded my car license plate dataset which contains 433 .png and .xml files, from Kaggle. It can be found and download from here
 https://www.kaggle.com/andrewmvd/car-plate-detection#
+I augmented dataset and my dataset turned into 690 images.
+You can augment your dataset here
+https://app.roboflow.com/
