@@ -95,7 +95,7 @@ drive.mount('/content/drive')
  
 you can download it from here
 
-https://colab.research.google.com/drive/1mAbzVafP1BYH8U2OsFbKdCTUBMqYKrQe?usp=sharing
+https://drive.google.com/file/d/1W8x_S_9-bk9sZuGtzUnE6FZGqeV9v-tl/view?usp=sharing
 
 Download my LP-detection repository and .weights file
 Test on a single image:
