@@ -29,3 +29,8 @@ https://app.roboflow.com/
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+
+3.clone the darknet git repository
+```
+! git clone https://github.com/AlexeyAB/darknet
+```
