@@ -24,3 +24,8 @@ https://app.roboflow.com/
 1.upload our dataset on google drive
 
 2.mount the Google Drive to Google Colab
+
+"""
+from google.colab import drive
+drive.mount('/content/drive')
+"""
