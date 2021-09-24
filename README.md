@@ -12,3 +12,10 @@ https://www.kaggle.com/andrewmvd/car-plate-detection#
 I augmented dataset and my dataset turned into 690 images.
 You can augment your dataset here
 https://app.roboflow.com/
+
+
+##Step 2 : train the model on Google Colab
+
+1.upload our dataset on google drive
+
+2.mount the Google Drive to Google Colab
