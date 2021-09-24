@@ -93,7 +93,9 @@ drive.mount('/content/drive')
 
  I couldn’t push my final weights file  (yolov3_training_final.weights 234MB)
  
-If you are interested contact me by email
+you can download it from here
+
+https://colab.research.google.com/drive/1mAbzVafP1BYH8U2OsFbKdCTUBMqYKrQe?usp=sharing
 
 Download my LP-detection repository and .weights file
 Test on a single image:
