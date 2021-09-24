@@ -89,4 +89,14 @@ drive.mount('/content/drive')
 ```
 
 
-##Step 3: prediction
+## Step 3: prediction
+
+ I couldn’t push my final weights file  (yolov3_training_final.weights 234MB)
+ 
+If you are interested contact me by email
+
+Download my LP-detection repository and .weights file
+Test on a single image:
+```
+Python  yolo.py –image test.jpg
+```
